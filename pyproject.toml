@@ -1,0 +1,23 @@
+[project]
+name = "ErisPulse-EmailForwarder"
+version = "1.0.0"
+description = "监听邮件适配器并将邮件转发到其他平台的 ErisPulse 模块"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "wsu2059q", email = "wsu2059@qq.com" }
+]
+dependencies = [
+    "ErisPulse-EmailAdapter",
+]
+
+[project.entry-points]
+"erispulse.module" = { "EmailForwarder" = "EmailForwarder:Main" }
+
+[tool.setuptools.packages.find]
+include = ["EmailForwarder"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
