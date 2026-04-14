@@ -1,6 +1,6 @@
 [project]
 name = "ErisPulse-EmailForwarder"
-version = "1.0.0"
+version = "1.0.1"
 description = "监听邮件适配器并将邮件转发到其他平台的 ErisPulse 模块"
 readme = "README.md"
 requires-python = ">=3.10"
